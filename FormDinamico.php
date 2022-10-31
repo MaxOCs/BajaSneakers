@@ -3,6 +3,7 @@ include_once "conection.php";
 include_once "Login.php";
 include_once "Registro.php";
 
+
 $conexion = conectar();
 
 if (isset($_GET["pais"]))
@@ -45,14 +46,14 @@ else
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <script src="jquery-3.6.1.min.js"></script>
     <script src="script.js"></script>
-<!--
+    <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js"></script>  
     
---->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+    --->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
     
-<title>BajaShoes</title>
+    <title>BajaShoes</title>
 
     <script>
         $(document).ready(function(){
@@ -68,6 +69,7 @@ else
                     $("#ciudad").append(respuesta);
                 });
             });
+            
         });
     </script>
 </head>
