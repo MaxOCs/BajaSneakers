@@ -7,6 +7,8 @@ $(document).ready(function(){
     });
 });
 */
+
+
 const $btnSignIn= document.querySelector('.sign-in-btn'),
       $btnSignUp = document.querySelector('.sign-up-btn'),  
       $signUp = document.querySelector('.sign-up'),
@@ -15,9 +17,21 @@ const $btnSignIn= document.querySelector('.sign-in-btn'),
 document.addEventListener('click', e => {
     if (e.target === $btnSignIn || e.target === $btnSignUp) {
         $signIn.classList.toggle('active');
-        $signUp.classList.toggle('active')
+        $signUp.classList.toggle('active');
     }
 });
+
+
+/*
+$(document).ready(function(){
+
+    $(".sign-in-btn").click(function(){
+        $(".sign-in").toggle()
+    });
+});
+*/
+
+/*
 $(document).ready(function(){
 
     $("#Flogin").validate({
@@ -31,7 +45,7 @@ $(document).ready(function(){
                 required:true,
                 email:true
                 //pattern:true
-                pattern:"[Aa-Zz0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                //pattern:"[Aa-Zz0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
                 
             },
             
@@ -58,3 +72,4 @@ $(document).ready(function(){
         }
     });
 });
+*/

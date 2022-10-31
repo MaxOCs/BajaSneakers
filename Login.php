@@ -14,7 +14,7 @@
         $conection = conectar();
         $consulta = $conection->prepare(
             "SELECT email,contraseña, id, tipo, nombre".
-            " FROM login WHERE email=:email");
+            " FROM usuarios WHERE email=:email");
         $consulta->bindParam(':email',$email);
         $consulta->execute();
         $registros = $consulta->fetchAll();
